@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.text());
 
 //router
-require('app/routing/apiRoutes.js')(app);
-require('app/routing/htmlRoutes.js')(app);
+require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/htmlRoutes.js')(app);
 
 
 //starts the server to begin listening
